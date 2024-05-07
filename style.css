@@ -1,7 +1,7 @@
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -51,6 +51,11 @@ a {
   text-decoration-color: white;
 }
 
+.highlight {
+  display: inline-block;
+  background-color: lightgreen;
+}
+
 a:hover {
   color: grey;
   text-decoration: underline;
@@ -59,6 +64,7 @@ a:hover {
 }
 
 .logo {
+  font-family: 'Sacramento', cursive;
   font-size: 2rem;
 }
 
@@ -430,3 +436,18 @@ footer {
 footer p {
   text-align: center;
 }
+
+.Multi-Typing{
+  width: 246px;
+  overflow: hidden;
+}
+.Multi-Typing .text-Multi-Typing{
+
+  color: #4070F4;
+  font-size: 30px;
+  font-weight: 600;
+}
+.Multi-Typing .text-Multi-Typing.first-text-Multi-Typing{
+  color: #FFF;
+}
+

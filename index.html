@@ -10,7 +10,7 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Sudip Mukherjee</div>
+      <div class="logo">Sudip <div class="highlight">Mukherjee</div></div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -40,10 +40,10 @@
       <div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
+      <div class="section__text ">
+        <p class="section__text__p1 text-Multi-Typing first-text-Multi-Typing">Hello, I'm</p>
         <h1 class="title">Sudip Mukherjee</h1>
-        <p class="section__text__p2">Full-stack developer</p>
+        <p class="section__text__p2 text-Multi-Typing sec-text-Multi-Typing">Frontend Developer</p>
         <div class="btn-container">
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
@@ -312,7 +312,6 @@
               </button>
             </div>
           </div>
-
         </div>
       </div>
       <img
@@ -358,5 +357,21 @@
       <p></p>
     </footer>
     <script src="script.js"></script>
+    <script>
+      const text = document.querySelector(".sec-text-Multi-Typing");
+      const textLoad = () => {
+        setTimeout(() => {
+          text.textContent = "Front end developer";
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "Back End developer";
+        }, 4000);
+        setTimeout(() => {
+          text.textContent = "Freelancer";
+        }, 8000); //1s = 1000 milliseconds
+      };
+      textLoad();
+      setInterval(textLoad, 12000);
+    </script>
   </body>
 </html>
